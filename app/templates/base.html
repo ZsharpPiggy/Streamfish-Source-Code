@@ -1,7 +1,7 @@
     {% extends 'bootstrap/base.html' %}
 
 {% block title %}
-    {% if title %}{{ title }} - Streamfish{% else %}{{ _('Streamfish') }}{% endif %}
+    {% if title %}{{ title }} - Dva Patri Community{% else %}{{ _('Dva Patri Community') }}{% endif %}
 {% endblock %}
 {% block navbar %}
     <nav class="navbar nav  bar-default margin: 0;">
@@ -29,7 +29,7 @@
                 {% endif %}
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_anonymous %}
-                    <li><a href="{{ url_for('auth.login') }}">{{ _('Streamfish') }}</a></li>
+                    <li><a href="{{ url_for('auth.login') }}">{{ _('Dva Patri Community') }}</a></li>
                     {% else %}
                     <li>
                         <a href="{{ url_for('main.messages') }}">{{ _('Private Messages') }}
